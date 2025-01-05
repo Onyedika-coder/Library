@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="Library.css">
+    <script defer src="Library.js"></script>
+</head>
+<body>
+   <div id="container">
+        <div id="header">
+            <h1 id="appName">Kachisom Library</h1>
+            <p id="odinBooks">Books for Odin</p>
+            <input type="search" name="search" id="search" placeholder="Search books...">
+        </div>
+        <div class="main">
+
+            <h3 id="read">Books to Read</h3>
+            
+                <ul id="bookList" >
+                    <li>
+                        <div class="bookHolder fistBook">
+                            <div class="title">The Patience</div>
+                            <button data-index='0' id="delete">delete</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookHolder secondBook">
+                            <div class="title">Love is Magical</div>
+                            <button data-index='1'id="delete">delete</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookHolder thirdBook">
+                            <div class="title">The Journey</div>
+                            <button data-index='2' id="delete">delete</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookHolder fourthBook">
+                            <div class="title">Endurance</div>
+                            <button data-index='3' id="delete" type="button" >delete</button>
+                        </div>
+                    </li>
+                </ul>
+                
+         <button id="addBtn" type="button">Add Book</button>
+
+        </div>
+   </div> 
+   <div id="modal" class="modal">
+        <button id="closeBtn">&times;</button>
+        <h1 id="modalHeader">New Book</h1>
+        <h3 id="bookInfo">Book info</h3>
+        <form class="modalForm" action="#">
+            <label for="titleInput">Title:</label><br>
+            <input type="text" id="titleInput" class="input"><br><br><br>
+            <label for="authorInput">Author:</label><br>
+            <input type="text" id="authorInput" class="input"><br><br><br>
+            <label for="pagesInput">Pages:</label><br>
+            <input type="text" id="pagesInput" class="input"><br><br><br>
+            <button type="submit" id="newBookBtn">Submit</button>
+        </form>
+   </div>
+   <div id="overlay" class="overlay"></div>
+</body>
+</html>
