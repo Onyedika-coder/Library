@@ -211,22 +211,29 @@ label{
 /* For tablets (screen width <= 768px) */
 @media (max-width: 768px) {
     #container {
-        width: 90%;
+        width: 80%;
+        min-height: 200px;
     }
 
     #header {
-        height: 150px;
+        height: 120px;
         font-size: smaller;
     }
 
     #search {
-        width: 90%;
+        width: 70%;
+        min-height: 35px;
         font-size: medium;
     }
 
     #addBtn, #newBookBtn {
-        width: 80%;
-        font-size: medium;
+        min-width: 60%;
+        font-size: small;
+        position: relative;
+        left:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #modal {
@@ -240,7 +247,7 @@ label{
 }
 
 /* For mobile devices (screen width <= 480px) */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     #container {
         width: 100%;
         margin: 10px auto;
@@ -257,10 +264,13 @@ label{
     }
 
     #addBtn, #newBookBtn {
-        width: 50%;
+        min-width: 50%;
         font-size: small;
         position: relative;
-        left: 25%;
+        left:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #modal {
