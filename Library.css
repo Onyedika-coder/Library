@@ -207,3 +207,72 @@ label{
     cursor: pointer;
 }
 
+
+/* For tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+
+    #header {
+        height: 150px;
+        font-size: smaller;
+    }
+
+    #search {
+        width: 90%;
+        font-size: medium;
+    }
+
+    #addBtn, #newBookBtn {
+        width: 80%;
+        font-size: medium;
+    }
+
+    #modal {
+        width: 70%;
+        min-height: 300px;
+    }
+
+    .input {
+        width: 80%;
+    }
+}
+
+/* For mobile devices (screen width <= 480px) */
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #header {
+        height: 120px;
+        font-size: small;
+    }
+
+    #search {
+        width: 100%;
+        font-size: small;
+    }
+
+    #addBtn, #newBookBtn {
+        width: 100%;
+        font-size: small;
+    }
+
+    #modal {
+        width: 90%;
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    #closeBtn {
+        right: 10px;
+    }
+}
+
