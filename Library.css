@@ -252,13 +252,15 @@ label{
     }
 
     #search {
-        width: 100%;
+        width: 70%;
         font-size: small;
     }
 
     #addBtn, #newBookBtn {
         width: 50%;
         font-size: small;
+        position: relative;
+        left: 25%;
     }
 
     #modal {
