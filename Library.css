@@ -257,7 +257,7 @@ label{
     }
 
     #addBtn, #newBookBtn {
-        width: 100%;
+        width: 50%;
         font-size: small;
     }
 
